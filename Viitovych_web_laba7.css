@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background: linear-gradient(to bottom, #141e30, #243b55); color: lightsteelblue;
+	background-size: cover;
+    font-family: sans-serif;
+}
+
+.company_name{
+    padding-top: 0;
+    height: 68px;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-left: 30px;
+    color: black;
+    
+}
+
+.container{
+	width: 80%;
+	background-color: rgba(128, 128, 128, 0.55);
+	margin: auto;
+	border-right: 2px solid #ac9292;
+	border-left: 2px solid #ac9292;
+    height: auto;
+}
+
+.header{
+	width: 100%;
+	background-color: bisque;
+	padding-top: 50px;
+   
+}
+
+h1{
+    font-size: 20px;
+    color: darkorange;
+    padding-top: 15px;
+    text-align: center;
+}
+
+p{
+    text-indent: 15px;
+    text-align: justify;
+    color: oldlace;
+}
+
+section{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.color_text{
+    color: coral;
+}
+
+.sidebarLeft{
+	width: 300px;
+	height: auto;
+}
+
+.main{
+	width: 300px;
+/*	height: 450px;*/
+    height: auto;
+	background-color: dimgray;
+    height: auto;
+}
+
+.sidebarRight{
+	width: 300px;
+	height: auto;
+}
+
+#pic1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer{
+	height: 150px;
+	background-color: darkolivegreen;	
+	width: 100%;
+    display: inline-flex;
+    color: black;
+}
+
+.footer1{
+	height: 150px;
+	background-color: bisque;	
+	width: 50%;
+    text-align: left;
+    text-decoration: none;
+    line-height: 27px;
+    padding-left: 20px;
+}
+
+.footer2{
+	height: 150px;
+	background-color: bisque;	
+	width: 50%;
+    text-align: left;
+    line-height: 27px;
+}
+
+.menu ul li{
+    padding: 30px;
+    text-align: center;
+    transition: 0.6s;
+    font-size: 20px;
+    width: inherit;
+}
+.menu ul > li:hover{
+  background-color: #f96;
+}
+.menu ul ul > li:hover{
+  background-color: #79c;
+}
+.menu ul li, .menu ul{
+  display: inline-block;
+}
+.menu ul{
+  margin: 0;
+  padding: 0;
+  background-color: #f63;
+  display: flex;
+}
+.menu ul ul{
+  display: none;
+  position: absolute;
+  background-color: #369;
+  margin-top: 25px;
+  margin-left: -25px;
+}
+.menu ul a{
+  color: #fff;
+  text-decoration: none;
+}
+.menu ul ul a{
+  color: #fff;
+  text-decoration: none;
+}
+.menu li:hover ul{
+    display: block;
+    background-color: hsla(215, 24%, 15%, 0.88);
+}
+
+.menu li:hover li{
+  display: block;
+}
+
+@media all and (max-width:1024px){
+	.container{
+		width: 768px;
+	}
+	.sidebarRight{
+		width: 100%;
+	}
+	.sidebarLeft{
+		width: 380px;
+	}
+	.main{
+		width: 380px;
+	}
+}
+
+@media all and (max-width:960px){
+	.container{
+		width: 500px;
+	}
+	.sidebarLeft{
+		width: 100%;
+	}
+	.main{
+		width: 100%;
+	}
+}
